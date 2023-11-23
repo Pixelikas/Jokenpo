@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoKenPô ʕ•́ᴥ•̀ʔっ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container">
+
+        <div id="cima">
+
+            <div id="cima-esquerda">
+
+            </div>
+
+            <div id="cima-meio">
+                
+                <label id="lbTitulo">Bem-vindo ao JoKenPô!</label>
+                <img id="imgIcones" src="img/triple-icon.png">
+                
+            </div>
+
+            <div id="cima-direita">
+                
+                <button id="btnMusica" onclick="Musica()"></button>
+                
+            </div>
+
+        </div>
+
+        <div id="meio">
+
+            <div id="meio-cima">
+
+                <input type="text" onchange="ConfirmaNome()" id="inptJogador" placeholder="Jogador">
+                <label id="lbRodadas">Rodada 0</label>
+                <label id="lbSistema">Sistema</label>
+
+            </div>
+
+            <div id="meio-meio">
+
+                <img id="imgJogador" onclick="TrocaImagem()" src="img/frame-player.png">
+                <label id="xis">X</label>
+                <img id="imgSistema" src="img/frame-sistema.png">
+                
+            </div>
+
+            <div id="meio-baixo">
+
+                <button id="btnJogar" onclick="Joga()" class="btn">Jogar</button>
+                <button id="btnReiniciar" onclick="Reinicia()" class="btn">Reiniciar</button>
+                
+            </div>
+            
+        </div>
+
+        <div id="baixo">
+
+            <div id="baixo-esquerda">
+
+                <div id="baixo-esquerda-esquerda">
+                    
+                    <label id="lbJogador" class="lbls">Jogador</label>
+                    <label id="lbJogadorPts">0</label>
+
+                </div>
+
+                <div id="baixo-esquerda-direita">
+                    
+                    <label class="lbls">Sistema</label>
+                    <label id="lbSistemaPts">0</label>
+
+                </div>
+
+            </div>
+
+            <div id="baixo-meio">
+
+                <label id="lbResultado">[ Resultado ]</label>
+                
+            </div>
+
+            <div id="baixo-direita">
+
+                <img id="senaiLogo" src="img/Senai-Logo.png">
+                <audio id="somConfirma" src="audio/confirm.wav"></audio>
+                <audio id="somSeleciona" src="audio/select.wav"></audio>
+                <audio id="musicaFundo" src="audio/poke-gym.mp3" loop></audio>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script src="jokenpo.js"></script>
+
+</body>
+</html>
